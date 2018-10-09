@@ -9,6 +9,7 @@ public class App {
     private JButton button_message;
 
     public App() {
+        //creating add listener method action to button
         button_message.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -19,8 +20,8 @@ public class App {
     public static void main(String args[]){
         JFrame frame=new JFrame("App");
         frame.setContentPane(new App().mainPanel);
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.pack();
-        frame.setVisible(true);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);//
+        frame.pack();//which will sizes the content
+        frame.setVisible(true);//visibility message
     }
 }
